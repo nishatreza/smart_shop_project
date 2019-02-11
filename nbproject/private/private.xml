@@ -4,11 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/routes/web.php</file>
+            <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/app/Http/Controllers/SliderController.php</file>
             <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/resources/views/frontEnd/home/home_content.blade.php</file>
-            <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/resources/views/frontEnd/category/category_content.blade.php</file>
-            <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/resources/views/frontEnd/includes/menu.blade.php</file>
+            <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/public/frontEnd/css/style.css</file>
             <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/app/Http/Controllers/FrontendController.php</file>
-            <file>file:/F:/XAMP/htdocs/laravel%20projects/projectone/app/Http/Controllers/ProductController.php</file>
         </group>
     </open-files>
 </project-private>

@@ -8,6 +8,7 @@ Add category
 
 @section('body')
 
+
 <!--<hr>-->
 @if (session('status'))
         <div class="alert alert-success">

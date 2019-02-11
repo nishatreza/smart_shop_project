@@ -13,6 +13,7 @@ class FrontendController extends Controller
         
       $publishedProducts = Product::where('publicationStatus',1)->get();
       $publishedSliders = slider::where('publicationStatus',1)->get();
+//      $publishedSliders = slider::where('publicationStatus',1)->first();
 //          echo '<pre>';
 //        print_r($publishedSliders);
 //        exit();
@@ -31,6 +32,17 @@ class FrontendController extends Controller
                 
         return view('frontEnd.category.category_content',['publishedCategoryProducts'=>$publishedCategoryProducts]);
         // return 'hello';
+    }
+    
+    public function productDetails($id){
+        
+//      $productDetails = Product::where('id',$id)
+      $productDetails = Product::find($id);
+               
+//                ->first();
+        
+     return view('frontEnd.product.productDetails',['productDetails'=>$productDetails]);
+    
     }
 
 }

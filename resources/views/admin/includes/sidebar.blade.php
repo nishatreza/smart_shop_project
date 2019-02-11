@@ -106,19 +106,17 @@
 
          </ul>
         </li>
-          <!-- <li class="treeview">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+           <li class="">
+          <a href="{{url('/manage-order')}}">
+            <i class="fa fa-table"></i> <span>Manage Order</span>
+
           </a>
-          <ul class="treeview-menu">
-            <li><a href="{{asset('admin/adminMaster/')}}/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="{{asset('admin/adminMaster/')}}/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-          </ul>
+          {{--<ul class="treeview-menu">--}}
+            {{--<li><a href="{{asset('admin/adminMaster/')}}/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>--}}
+            {{--<li><a href="{{asset('admin/adminMaster/')}}/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>--}}
+          {{--</ul>--}}
         </li>
-        <li>
+      <!-- <li>
           <a href="{{asset('admin/adminMaster/')}}/pages/calendar.html">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">

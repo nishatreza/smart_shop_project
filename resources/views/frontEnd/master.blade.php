@@ -14,7 +14,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="{{asset('frontEnd/')}}/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- pignose css -->
 <link href="{{asset('frontEnd/')}}/css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
-
+<!--for details page-->
+<link rel="stylesheet" href="{{asset('frontEnd/')}}/css/flexslider.css" type="text/css" media="screen" />
 <!--men page css-->
 <link rel="stylesheet" type="text/css" href="{{asset('frontEnd/')}}/css/jquery-ui.css">
 
@@ -24,6 +25,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script type="text/javascript" src="{{asset('frontEnd/')}}/js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
+<!-- single -->
+<script src="{{asset('frontEnd/')}}/js/imagezoom.js"></script>
+<script src="{{asset('frontEnd/')}}/js/jquery.flexslider.js"></script>
+<!-- single -->
 <!-- cart -->
 	<script src="{{asset('frontEnd/')}}/js/simpleCart.min.js"></script>
 <!-- cart -->

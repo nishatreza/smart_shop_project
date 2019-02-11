@@ -28,11 +28,24 @@ input[type="button"],input[type="submit"]{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-
+/*new css*/
+.img-slider{
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    /*width: 77px;*/
+    /*padding-top: 85px;*/
+}
+.img-inner-slider{
+    width: auto;
+    height: 155.1px !important;
+}
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 	font-family: 'Montserrat', sans-serif;
-}	
+}
 p{
 	margin:0;
 }
@@ -58,7 +71,7 @@ label{
 }
 .header ul li:nth-child(2) {
     border-left: 1px solid #eee;
-    border-right: 1px solid #eee;	
+    border-right: 1px solid #eee;
 }
 .header ul li a {
 	color:#848484;
@@ -79,7 +92,7 @@ label{
     text-align: right;
 }
 .header-left{
-    text-align: left;	
+    text-align: left;
 }
 /*-- //header --*/
 

@@ -13,26 +13,26 @@ smart shop
 				<!-- Slide Image Area (1000 x 424) -->
 				<ul class="slide-group">
                                     
-           @foreach ($publishedSliders as $user)
-   @php $filenames = json_decode($user->productImage); @endphp
-   //filenames are decoded now and you can use the foreach loop just like below
-   @foreach ($filenames as $singlefilename)    
-     <img src="{{ asset($singlefilename->productImage) }}"/>
-   @endforeach
-
-@endforeach
-					<!--<li><img class="img-responsive" src="/images/slider{{$publishedProducts['productImage'] }}" alt="Dummy Image" /></li>-->
+        @foreach($publishedSliders as $images)
+					<li><img class="img-responsive img-slider" src="{{url('/slider/'.$images->productImage)}}" alt="Dummy Image" /></li>
+					<!--<li><img class="img-responsive" src="{{asset('/slider/'.$images->productImage)}}" alt="Dummy Image" /></li>-->
 <!--					<li><img class="img-responsive" src="{{asset('frontEnd/')}}/images/ba2.jpg" alt="Dummy Image" /></li>
 					<li><img class="img-responsive" src="{{asset('frontEnd/')}}/images/ba3.jpg" alt="Dummy Image" /></li>-->
-				</ul>
+				@endforeach
+                                
+                                </ul>
 
 				<!-- Slide Description Image Area (316 x 328) -->
 				<div class="script-wrap">
 					<ul class="script-group">
-<!--						<li><div class="inner-script"><img class="img-responsive" src="{{asset('frontEnd/')}}/images/baa1.jpg" alt="Dummy Image" /></div></li>
-						<li><div class="inner-script"><img class="img-responsive" src="{{asset('frontEnd/')}}/images/baa2.jpg" alt="Dummy Image" /></div></li>
+                                                    @foreach($publishedSliders as $images)
+
+						<li><div class="inner-script"><img class="img-responsive img-inner-slider" src="{{url('/slider/'.$images->productImage)}}" alt="Dummy Image" /></div></li>
+<!--						<li><div class="inner-script"><img class="img-responsive" src="{{asset('frontEnd/')}}/images/baa2.jpg" alt="Dummy Image" /></div></li>
 						<li><div class="inner-script"><img class="img-responsive" src="{{asset('frontEnd/')}}/images/baa3.jpg" alt="Dummy Image" /></div></li>-->
-					</ul>
+									@endforeach
+
+                                        </ul>
 					<div class="slide-controller">
 						<a href="#" class="btn-prev"><img src="{{asset('frontEnd/')}}/images/btn_prev.png" alt="Prev Slide" /></a>
 						<a href="#" class="btn-play"><img src="{{asset('frontEnd/')}}/images/btn_play.png" alt="Start Slide" /></a>
@@ -204,7 +204,7 @@ smart shop
                                                                     <img src="{{asset($publishedProduct->productImage)}}" alt="" class="pro-image-back" height="300">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{url('/product-details/'.$publishedProduct->id)}}" class="link-product-add-cart">Product Details</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>

@@ -12,11 +12,36 @@
 */
 //home content
 // Route::get('/login','LoginController@index');
+//product and slider content show
 Route::get('/','FrontendController@index');
 
 //category wise product show
 Route::get('/category/{id}','FrontendController@category');
+//product details show
+Route::get('/product-details/{id}','FrontendController@productDetails');
+//cart
+Route::post('/add-to-cart','CartController@addToCart');
+Route::get('/cart/show','CartController@showCartProduct');
+Route::get('/cart/delete/{id}','CartController@deleteCartProduct');
+Route::post('cart-update','CartController@updateCartProduct');
 
+//checkout
+Route::get('checkout/index','CheckoutController@index');
+//customer form in checkout
+Route::post('/customer-register','CheckoutController@customerRegister');
+Route::post('/customer-login','CheckoutController@customerLogin');
+Route::get('/shipping-info','CheckoutController@showShippingForm');
+Route::post('/new-shipping','CheckoutController@saveShippingInfo');
+Route::get('/payment-info','CheckoutController@showPaymentForm');
+
+//confirm order info
+Route::post('/new-order','OrderController@confirmOrderInfo');
+
+Route::get('/my-home','OrderController@customerHome');
+
+
+//manage order by admin
+Route::get('/manage-order','OrderController@manageOrder');
 
 
 
